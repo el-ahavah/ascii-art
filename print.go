@@ -14,6 +14,7 @@ func printAscii(asciiMap map[rune][]string, input string) {
 		return
 	}
 	inputLines := strings.Split(input, "\n")
+	height := len(asciiMap[' '])
 
 	for _, line := range inputLines {
 		if line == "" {
